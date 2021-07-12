@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body translate="no">
+    <main id = "main-content">
+        
+        <header>
+            <h1 id = "title">Student Survey Form</h1>
+            <p id = "description">Please enter the details with as accurate information possible</p>
+        </header>
+        <div>
+            <form action="#" id="survey-form">
+                <div id = form-element>
+                    <label for="name" id = "name-label">Name:</label><br>
+                        <input type="text" placeholder="Enter you name" id = "name" required>
+                </div>
+                
+                <div id = form-element>
+                    <label for="email" id = "email-label">Email:</label><br>
+                        <input type="email" placeholder="Enter you email" id = "email" required>
+                </div>
+                <div id = form-element>
+                    <label for="age" id = "number-label">Age:</label><br>
+                        <input type="number" placeholder="Enter your age" id = "number" required min="17" max="45">
+                </div>
+                <div id = "form-element">
+                    <label for="department">Department</label><br>
+                    <select name="department" id="dropdown" required>
+                        <option value="" disabled="" selected="">Select your Department</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="ISE">Information Science and Engineering</option>
+                        <option value="CIV">Civil Engineering</option>
+                        <option value="MEC">Mechanical Engineering</option>
+                        <option value="ECE">Electronics and Communications</option>
+                        <option value="EEE">Electrical Engineering</option>
+                    </select>
+                </div>
+                <div id = "check-element">
+                    Gender: <br>
+                    <label for="Gender">
+                    <input type="radio" name="gender" id="gender-select" value="Male" checked>&nbsp;Male</label>
+
+                    <label for="Gender">
+                    <input type="radio" name="gender" id="gender-select" value="Female">&nbsp;Female</label>
+                </div>
+                <div id = "check-element">
+                    Preferred mode of transport: <br>
+                    <label for="transport">
+                    <input type="checkbox" name="transport" id="transport-select" value="Walk" checked = "">&nbsp;Walk</label>
+                    <label for="transport">
+                    <input type="checkbox" name="transport" id="transport-select" value="Cycle" >&nbsp;Cycle</label> 
+                    <label for="transport">
+                    <input type="checkbox" name="transport" id="transport-select" value="Bike" >&nbsp;Bike</label>
+                    <label for="transport">
+                    <input type="checkbox" name="transport" id="transport-select" value="Car" >&nbsp;Car</label>
+                    <label for="transport">
+                    <input type="checkbox" name="transport" id="transport-select" value="Public-Transport" >&nbsp;Public transport</label>
+                </div>
+                <div id = "form-element">
+                    <label for="Suggestion">Any Suggestion to improve transport facilities?<br>
+                        <textarea name="Suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your suggestions here"></textarea>
+                    </label>
+                </div>
+                <div id = "form-element">
+                    <button type="submit" id = "submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
